@@ -1,14 +1,3 @@
-<!-- <h1>Heroe</h1>
-<p><strong>Nombre Signal: </strong>{{name().toUpperCase()}} </p>
-<p><strong>Edad Signal: </strong> {{age()}} </p>
-<p><strong>Description: </strong>{{getHeroDescription()}} </p>
-
-<button (click)="changeHero()">Cambiar a Spiderman</button>
-<br />
-<button (click)="resetForm()">Cambiar a Ironman</button>
-<br />
-<button (click)="changeAge()">Cambiar edad a 60</button> -->
-
 <h1>{{ name() }}</h1>
 
 <dl>
@@ -19,11 +8,16 @@
     <dd>{{ age() }}</dd>
 
     <td><strong>Método:</strong></td>
-    <dd>{{ getHeroDescription() }}</dd>
+    <dd>{{ heroDescription() }}</dd>
+    <!-- <dd>{{getHeroDescription() }}</dd>    reeplazado por heroDescription() 'Senal Computada'-->
+
 
     <td><strong>Capitalizado: </strong>:</td>
     <!-- <dd> {{ 'Mostrar nombre TODO EN MAYÚSCULAS' }} </dd> -->
-    <dd>{{name().toUpperCase()}}</dd>
+    <!-- <dd>{{name().toUpperCase()}}</dd>   ** reeplazado por Senal computada  -->
+    <!-- <dd>{{ capitalizeName()}}</dd>      **  se reemplaza por el 'pipe'-->
+    <dd>{{name() | uppercase }}</dd>
+
 </dl>
 
 <button (click)="changeHero()" class="btn btn-primary mx-2">
