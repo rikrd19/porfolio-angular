@@ -1,0 +1,35 @@
+<!-- <h1>Heroe</h1>
+<p><strong>Nombre Signal: </strong>{{name().toUpperCase()}} </p>
+<p><strong>Edad Signal: </strong> {{age()}} </p>
+<p><strong>Description: </strong>{{getHeroDescription()}} </p>
+
+<button (click)="changeHero()">Cambiar a Spiderman</button>
+<br />
+<button (click)="resetForm()">Cambiar a Ironman</button>
+<br />
+<button (click)="changeAge()">Cambiar edad a 60</button> -->
+
+<h1>{{ name() }}</h1>
+
+<dl>
+    <td><strong>Nombre: </strong></td>
+    <dd>{{ name() }}</dd>
+
+    <td><strong>Edad:</strong></td>
+    <dd>{{ age() }}</dd>
+
+    <td><strong>Método:</strong></td>
+    <dd>{{ getHeroDescription() }}</dd>
+
+    <td><strong>Capitalizado: </strong>:</td>
+    <!-- <dd> {{ 'Mostrar nombre TODO EN MAYÚSCULAS' }} </dd> -->
+    <dd>{{name().toUpperCase()}}</dd>
+</dl>
+
+<button (click)="changeHero()" class="btn btn-primary mx-2">
+    Cambiar nombre
+</button>
+
+<button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
+
+<button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
