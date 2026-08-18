@@ -1,10 +1,10 @@
-import { UpperCasePipe } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, computed, signal, } from '@angular/core';
 
 @Component({
   selector: 'app-hero-page',
   standalone: true,
-  imports: [UpperCasePipe],
+  imports: [CommonModule],
   templateUrl: './hero-page.component.html',
   styles: []
 })
@@ -27,6 +27,7 @@ export class HeroPageComponent {
   capitalizeName = computed(() => this.name().toUpperCase());
 
 
+
   changeHero(): void {
     this.name.set('Spiderman');
     this.age.set(22);
@@ -40,4 +41,29 @@ export class HeroPageComponent {
   changeAge() {
     this.age.set(60);
   }
+  // pipe de fecha 
+  public date = new Date();
+
+  // ngOnInit() {
+  //   setInterval(() => {
+  //     this.date = new Date();  // ← Actualiza la variable
+  //     console.log('variable', this.date);
+  //     // Angular detecta el cambio y actualiza el DOM
+  //   }, 1000)
+  // }
+
+  // ngOnDestroy() {
+  //   // ✅ Limpiar el intervalo para evitar memory leaks
+  //   if (this.intervalId) {
+  //     clearInterval(this.intervalId);
+  //   }
+  // }
+
+  // Pipe moneda 
+  public price = 500.443434;
+
+  // pipe pi
+  public pi = 3.14159265359;
+
+  public percentage = 0.5;
 }

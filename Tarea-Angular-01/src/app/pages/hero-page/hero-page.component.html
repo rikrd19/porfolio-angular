@@ -11,13 +11,11 @@
     <dd>{{ heroDescription() }}</dd>
     <!-- <dd>{{getHeroDescription() }}</dd>    reeplazado por heroDescription() 'Senal Computada'-->
 
-
     <td><strong>Capitalizado: </strong>:</td>
     <!-- <dd> {{ 'Mostrar nombre TODO EN MAYÚSCULAS' }} </dd> -->
     <!-- <dd>{{name().toUpperCase()}}</dd>   ** reeplazado por Senal computada  -->
     <!-- <dd>{{ capitalizeName()}}</dd>      **  se reemplaza por el 'pipe'-->
     <dd>{{name() | uppercase }}</dd>
-
 </dl>
 
 <button (click)="changeHero()" class="btn btn-primary mx-2">
@@ -27,3 +25,22 @@
 <button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
 
 <button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
+<br />
+<br />
+<!-- formato fecha usando pipe -->
+<!-- 1. Sin pipe -->
+<p> {{date}} </p>
+<br /><br />
+<!-- 2. con pipe -->
+<p>{{date | date: 'YYYY-MM-dd'}} </p>
+
+
+<!-- pipe moneda 'EUR':, 'CPL': 'code': '(/)', 'symbol': '4.1-4'-->
+<p>Precio con symbolo y 4 decimales: {{price | currency: 'EUR': 'symbol': '4.1-4' }}</p>
+<p>{{price | currency: 'CPL': 'symbol': '8.0-4' }}</p>
+
+<!-- pipe pi -->
+<p>Valor de pi: {{pi | number: '0.3-5'}} </p>
+
+<!-- pipe porcentaje  1=100%, 0.5=50% ....-->
+<p>Valor del porcentaje: {{percentage | percent: '0.2-2'}} </p>
