@@ -1,0 +1,12 @@
+<h3>{{ listName() }}</h3>
+
+<div class="card">
+    @for (character of characters(); track character.id) {
+        <div class="card-body">
+            <span>{{ character.name }}</span> -
+            <strong>{{ character.power }}</strong>
+        </div>
+    } @empty {
+        <p>No hay personajes</p>
+    }
+</div>
