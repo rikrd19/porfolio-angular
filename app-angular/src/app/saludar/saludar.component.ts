@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-saludar',
   imports: [FormsModule],
   templateUrl: './saludar.component.html',
-  styleUrl: './saludar.component.css'
+
 })
 export class SaludarComponent {
 
