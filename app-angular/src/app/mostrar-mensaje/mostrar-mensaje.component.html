@@ -1,0 +1,16 @@
+<body class="dark-theme">
+    <div class="container text-center dark-theme">
+        <div class="d-flex justify-content-center mt-3">
+            <button class="btn btn-primary me-2" (click)="mostrarMensaje()">
+                Mostrar Mensaje
+            </button>
+            <br /><br />
+            <button class="btn btn-danger" (click)="resetearMensaje()">
+                Resetear Mensaje
+            </button>
+        </div>
+        <div class="alert alert-success mt-3 mx-auto w-50">
+            {{mensaje}}
+        </div>
+    </div>
+</body>
