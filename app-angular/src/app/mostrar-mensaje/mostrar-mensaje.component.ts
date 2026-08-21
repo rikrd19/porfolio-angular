@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-mostrar-mensaje',
   imports: [],
   templateUrl: './mostrar-mensaje.component.html',
-  styleUrl: './mostrar-mensaje.component.css'
+
 })
 export class MostrarMensajeComponent {
 mensaje: string= '';

@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-agregar-tarea',
+  imports: [],
+  templateUrl: './agregar-tarea.component.html',
+
+})
+export class AgregarTareaComponent {
+  tarea: string = '';
+
+  agregarTarea(nuevaTarea: string): void {
+    this.tarea = nuevaTarea;
+  }
+
+}

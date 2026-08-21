@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-replicador',
   imports: [],
   templateUrl: './replicador.component.html',
-  styleUrl: './replicador.component.css'
+
 })
 export class ReplicadorComponent {
 

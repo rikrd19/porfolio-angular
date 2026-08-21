@@ -5,13 +5,14 @@ import { MostrarMensajeComponent } from "./mostrar-mensaje/mostrar-mensaje.compo
 import { ReplicadorComponent } from "./replicador/replicador.component";
 import { SaludarComponent } from "./saludar/saludar.component";
 import { ComponenteIfComponent } from "./componente-if/componente-if.component";
+import { AgregarTareaComponent } from "./agregar-tarea/agregar-tarea.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ComponenteIfComponent],
+  imports: [RouterOutlet, ComponenteIfComponent, AgregarTareaComponent],
   templateUrl: './app.component.html'
 
 })
 export class AppComponent {
-  title = 'Directiva @if en Angular';
+  title = 'Local Reference en Angular';
 }

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-hijo',
   imports: [],
   templateUrl: './hijo.component.html',
-  styleUrl: './hijo.component.css'
+
 })
 export class HijoComponent {
   private titulo = 'Titulo Componente Hijo';
