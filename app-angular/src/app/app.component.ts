@@ -6,13 +6,14 @@ import { ReplicadorComponent } from "./replicador/replicador.component";
 import { SaludarComponent } from "./saludar/saludar.component";
 import { ComponenteIfComponent } from "./componente-if/componente-if.component";
 import { AgregarTareaComponent } from "./agregar-tarea/agregar-tarea.component";
+import { ComponenteForComponent } from "./componente-for/componente-for.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ComponenteIfComponent, AgregarTareaComponent],
+  imports: [RouterOutlet, ComponenteIfComponent, AgregarTareaComponent, ComponenteForComponent],
   templateUrl: './app.component.html'
 
 })
 export class AppComponent {
-  title = 'Local Reference en Angular';
+  title = 'Directiva @for en Angular';
 }
